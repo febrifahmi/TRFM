@@ -2,6 +2,8 @@
 
 Toll Road Flood Monitoring (TRFM) system is a system developed to monitor flood occurences around crossdrain of Indonesia's toll roads.
 
+This system utilized available satellite image data and toll road CCTV data stream derive approximation of puddle/inundation on toll road near crossdrain.
+
 ## Toll Road Flood Monitoring System design flow:
 
 ### 1. Read Himawari real time satellite images periodically. 
