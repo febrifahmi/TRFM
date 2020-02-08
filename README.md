@@ -20,9 +20,9 @@ So, we basically need to construct the base url and the file url, donwload the i
 
 ### 2. Analyze the image
 
-a. Set pixels coordinate that represents the location of cities in himawari satellite image;
-b. Read specific color (deep pink-purple which represent heavy rainfall areas) and check if it's coincide with the location of cities;
-c. if yes, we load and check for the data of the toll road crossdrain location in that city;
-d. from the video stream, we take a screnshot/extract image and try to detect the puddle/inundation. we could use opencv and apply several methods, e.g edge canny detection combined with object detection to check if there is a slower movement of cars in the area of the puddle/inundation. if yes, send alert.
+1. Set pixels coordinate that represents the location of cities in himawari satellite image;
+2. Read specific color (deep pink-purple which represent heavy rainfall areas) and check if it's coincide with the location of cities;
+3. if yes, we load and check for the data of the toll road crossdrain location in that city;
+4. from the video stream, we take a screnshot/extract image and try to detect the puddle/inundation. we could use opencv and apply several methods, e.g edge canny detection combined with object detection to check if there is a slower movement of cars in the area of the puddle/inundation. if yes, send alert.
 
 ### 3. (to do next)
