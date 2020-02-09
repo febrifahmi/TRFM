@@ -18,6 +18,15 @@ Normally data.jma.go.jp updates data automatically every 10 minutes. We read the
 
 So, we basically need to construct the base url and the file url, donwload the image a couple seconds after the time variable reached, and analyze it.
 
+The `trfm.py` script is run using cron every 10 minute.
+
+Code of `getdata.sh`:
+`
+#!/bin/bash
+source /home/febrifahmi/Documents/01_CODING/TRFM/bin/activate
+python /home/febrifahmi/Documents/01_CODING/TRFM/trfms/TRFM/trfm.py
+`
+
 ### 2. Analyze the image
 
 1. Set pixels coordinate that represents the location of cities in himawari satellite image;
