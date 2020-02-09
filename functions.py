@@ -21,7 +21,7 @@ def gettargettime():
 	return formatteddatetime, formattedtime, formattedtimeGMT
 
 # i'm using se3 hrp here, means "South East Asia 3 area" - "Heavy Rainfall Potential"
-himawaribase = 'https://www.data.jma.go.jp/mscweb/data/himawari/img/se3/'
+himawaribase = 'https://www.data.jma.go.jp/mscweb/data/himawari/img/se3'
 imagename = "/se3_hrp_" + "{}" .format(gettargettime()[1]) + ".jpg"
 downloadURL = himawaribase + imagename
 
