@@ -7,6 +7,7 @@
 # functions.py : code for base image processing.
 # --------------------------------------------------------------------------------------
 
+
 from datetime import datetime,timedelta
 
 # get datetime and time now in UTC and GMT
@@ -17,6 +18,9 @@ def gettargettime():
 	targetgmttime = datetime.now() - timedelta(minutes=10)
 	formattedtimeGMT = targetgmttime.strftime("%H:%M:%S")
 	return formatteddatetime, formattedtime, formattedtimeGMT
+
+
+
 
 # to do:
 # buat fungsi delete old sat images untuk menghemat space
