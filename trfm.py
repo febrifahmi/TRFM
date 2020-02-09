@@ -17,8 +17,11 @@ print(fn.downloadURL)
 print(fn.gettargettime()[2])
 print(fn.imgfolder)
 fn.downloadhimawari()
+
+
+# read the last/current satellite image using numpy
+# img = cv2.imread('a.jpg',0)
+
+
 # check if the time reach 00:03:00 and clean the images in folder
 fn.clearimgfolder()
-
-# read the satellite image using numpy
-# img = cv2.imread('a.jpg',0)

@@ -26,8 +26,10 @@ imagename = "/se3_hrp_" + "{}" .format(gettargettime()[1]) + ".jpg"
 downloadURL = himawaribase + imagename
 
 # set saved image folder
-imgfolder = os.path.abspath(os.path.join(os.path.dirname('TRFM'), '..', 'images'))
+imgfolder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'images'))
 savedimgname = imgfolder + imagename
+
+print(imgfolder)
 
 # download himawari sat image
 def downloadhimawari():
