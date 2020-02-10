@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # --------------------------------------------------------------------------------------
-# TRFM is written by @febrifahmi :c 2020
+# TRFM is written by @febrifahmi and fiddin alhaz :c 2020
 # Toll Road Flood Monitoring system for Indonesia toll road crossdrain flood monitoring
 # using OpenCV
 # functions.py : code for base image processing.
