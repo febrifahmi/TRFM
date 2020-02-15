@@ -17,6 +17,8 @@ print(fn.downloadURL)
 print(fn.gettargettime()[2])
 print(fn.imgfolder)
 fn.downloadhimawari()
+fn.getmaphimawari()
+fn.getmaphrp()
 
 
 # read the last/current satellite image using numpy
