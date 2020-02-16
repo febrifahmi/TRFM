@@ -36,6 +36,7 @@ print(imgfolder)
 def downloadhimawari():
 	with open(savedimgname, 'wb') as f:
 	    f.write(requests.get(downloadURL).content)
+	    f.close()
 
 # remove all image files in folder if time reached 00:03:00 UTC (or the next day), so we can start with empty and fresh data
 def clearimgfolder():
