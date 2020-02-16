@@ -64,7 +64,7 @@ clrhrp4 = '(255, 0, 200, 255)'
 # get pixels which has green color to extract the map/islands, and pink/light purple to extract the hrp area
 immapfile = '/basemap.png'
 immappath = imgfolder + immapfile
-hrpmapfile = '/hrpmap.png'
+hrpmapfile = '/currenthrpmap.png'
 hrpmappath = imgfolder + hrpmapfile
 
 def getmaphimawari():
@@ -73,7 +73,6 @@ def getmaphimawari():
 	for x in range(1101):
 		for y in range(501):
 			im.putpixel((x,y),(0, 0, 0, 255))
-	im.save(immappath)
 
 	# open and check all pixels from the himawari sat image
 	himsatimg = Image.open(savedimgname)
@@ -93,7 +92,6 @@ def getmaphrp():
 	for x in range(1101):
 		for y in range(501):
 			im.putpixel((x,y),(0, 0, 0, 255))
-	im.save(hrpmappath)
 
 	# open and check all pixels from the himawari sat image
 	himsatimg = Image.open(savedimgname)
@@ -104,4 +102,4 @@ def getmaphrp():
 				# paint the map
 				im.putpixel((x,y),clrhrp1)
 	im.save(hrpmappath)
-	print("HRP map created.")
+	print("Current HRP map created.")
